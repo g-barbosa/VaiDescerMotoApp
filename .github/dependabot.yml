@@ -1,0 +1,34 @@
+version: 2
+updates:
+- package-ecosystem: npm
+  directory: "/"
+  schedule:
+    interval: daily
+    time: "08:00"
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: expo
+    versions:
+    - 40.0.1
+    - 41.0.0
+  - dependency-name: react-native-gesture-handler
+    versions:
+    - 1.10.0
+    - 1.10.1
+    - 1.10.2
+    - 1.9.0
+  - dependency-name: react-native-web
+    versions:
+    - 0.14.10
+    - 0.14.11
+    - 0.14.12
+    - 0.14.13
+  - dependency-name: react-native-vector-icons
+    versions:
+    - 8.0.0
+  - dependency-name: react-navigation
+    versions:
+    - 4.4.3
+  - dependency-name: lodash
+    versions:
+    - 4.17.20
